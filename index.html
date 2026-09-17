@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HistoTechOpen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --indigo:#3B2E5A; --coral:#E8635A; --ink:#1A1A1E;
+    --tint:#F4F1F8; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,Helvetica,Arial,sans-serif;color:var(--ink);
+       margin:0;line-height:1.6}
+  section{padding:60px 20px}
+  .wrap{max-width:780px;margin:0 auto}
+  h1,h2{color:var(--indigo)}
+  a{color:var(--coral)}
+  table{width:100%;border-collapse:collapse;margin-top:12px;display:block;overflow-x:auto;white-space:nowrap}
+  td,th{padding:8px 12px;border-bottom:1px solid #ddd;text-align:left}
+
+  /* HERO */
+  .hero{background:var(--indigo);color:#fff;text-align:center;padding:60px 20px 0}
+  .hero h1{color:#fff;margin:0 0 .3em;font-size:2.4em}
+  .hero .caption{max-width:600px;margin:0 auto 40px;font-size:1.15em}
+  .hero-img{width:100%;height:auto;display:block}
+
+  /* PILLARS */
+  .pillars{background:var(--tint)}
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+  .pillar{background:#fff;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .pillar h3{margin-top:0;color:var(--coral)}
+
+  /* ACTIVITIES */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:30px}
+  .card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .card img{width:100%;border-radius:4px;margin-bottom:12px;object-fit:cover;height:120px}
+  .card .stages{font-size:.85em;color:#666;margin-top:8px}
+
+  /* PROJECTS */
+  .proj-group{margin-bottom:32px}
+  .proj-group h3{color:var(--coral)}
+  .status{font-size:.8em;color:#888;font-style:italic}
+
+  /* FOUNDER */
+  .founder{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .founder img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+
+  footer{text-align:center;padding:40px;font-size:.9em;color:#666}
+
+  @media (max-width:700px){
+    .grid, .pillar-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>HistoTechOpen</h1>
+  <p class="caption">Understanding, modelling, and optimising the histochemical workflow — in the open, for full reproducibility.</p>
+  <img src="images/hero-section.jpg" alt="HistoTechOpen hero image" class="hero-img">
+</header>
+
+<!-- CORE PROPOSITION -->
+<section class="wrap">
+  <h2>The Core Proposition</h2>
+  <p>The quality and interpretability of histological data is determined at
+  the procedural level — fixation, tissue handling, labelling parameters,
+  processing conditions. HistoTechOpen exists to study and optimise that
+  procedural layer directly. Output like the image below is the standard
+  we're building toward, not the exception.</p>
+  <!-- <img src="images/synaptic-reconstruction.jpg" alt="Synaptic reconstruction" style="width:100%;border-radius:8px;margin-top:16px"> -->
+</section>
+
+<!-- THREE PILLARS -->
+<section class="pillars">
+  <div class="wrap">
+    <h2>The Three Pillars</h2>
+    <p>Histological science divides into three pillars, all dependent on one core workflow.</p>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <h3>Histochemistry</h3>
+        <p>The discipline: chemical, biochemical, and molecular processes that inform and optimise the workflow.</p>
+      </div>
+      <div class="pillar">
+        <h3>Histotechnology</h3>
+        <p>The engineering: tools and procedure implementations that execute the workflow.</p>
+      </div>
+      <div class="pillar">
+        <h3>Histoarchitecture</h3>
+        <p>The knowledge: tissue structure derived from histochemistry.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px"><em>All three depend on the same core Histochemical Workflow.</em></p>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="wrap">
+  <h2>Activities</h2>
+  <div class="grid">
+    <div class="card">
+      <!-- <img src="images/documentation.jpg" alt="Documentation"> -->
+      <h3>1. Documentation</h3>
+      <p>Standards and metadata frameworks that must exist before procedure work can be documented at all.</p>
+    </div>
+    <div class="card">
+      <!-- <img src="images/procedure-science.jpg" alt="Procedure science"> -->
+      <h3>2. Procedure Science</h3>
+      <p>Using those standards to develop and mechanistically characterise histochemical workflows.</p>
+      <p class="stages">Provenance → Preserve → Access → Label → Stabilise</p>
+    </div>
+    <div class="card">
+      <!-- <img src="images/reference-datasets.jpg" alt="Reference datasets"> -->
+      <h3>3. Open Reference Datasets</h3>
+      <p>High-quality, ground-truth datasets collected using the refined procedures.</p>
+    </div>
+    <div class="card">
+      <!-- <img src="images/data-processing.jpg" alt="Data processing"> -->
+      <h3>4. Data Processing</h3>
+      <p>Software that extracts understanding from that high-quality data.</p>
+      <p class="stages">Image Formation Models → Image Processing Pipelines → Image Analysis Methods</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="pillars">
+  <div class="wrap">
+    <h2>Community</h2>
+    <p>Built through the RMS Histology FIG, IFSHI, and open science channels — the
+    network through which methodology and data get shared and improved.</p>
+    <!-- <img src="images/community.jpg" alt="RMS Histology FIG"> -->
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="wrap">
+  <h2>Projects</h2>
+
+  <div class="proj-group">
+    <h3>Histoarchitecture</h3>
+    <p><strong>MRI–SS2P multimodal mouse brain atlas</strong> — Paxinos + Allen CCF annotation <span class="status">(ongoing)</span></p>
+    <p><strong>Dendritic/synaptic labelling and reconstruction in cleared tissue</strong> — with Teea Wang <span class="status">(ongoing)</span></p>
+    <p><strong>DRG full reconstruction</strong> <span class="status">(ongoing)</span></p>
+  </div>
+
+  <div class="proj-group">
+    <h3>Histochemistry</h3>
+    <p><strong>Histochemical Workflow stage optimisation</strong> — Provenance / Preserve / Access / Label / Stabilise <span class="status">(ongoing)</span></p>
+  </div>
+
+  <div class="proj-group">
+    <h3>Histotechnology</h3>
+    <p><strong>Custom component designs</strong> — embedding moulds, sectioning matrices, PDMS spacers <span class="status">(in development)</span></p>
+  </div>
+</section>
+
+<!-- REPOS -->
+<section class="pillars">
+  <div class="wrap">
+    <h2>Repos</h2>
+
+    <h3>Documentation</h3>
+    <table>
+      <tr><td><a href="https://github.com/HistoTechOpen/knowledgemanagr">knowledgemanagr</a></td><td>Plaintext, filesystem-native electronic lab notebook</td></tr>
+      <tr><td><a href="https://github.com/HistoTechOpen/km-claude-skills">km-claude-skills</a></td><td>Claude Skills for KnowledgeManagr Organisation management</td></tr>
+    </table>
+
+    <h3>Procedure Science</h3>
+    <table>
+      <tr><td><a href="https://github.com/HistoTechOpen/procedure-pack-template">procedure-pack-template</a></td><td>KnowledgeManagr insertable-content template for procedure packs</td></tr>
+      <tr><td><a href="https://github.com/HistoTechOpen/procedure-pack-example">procedure-pack-example</a></td><td>Example histology procedure pack, built from the template</td></tr>
+    </table>
+
+    <h3>Open Reference Datasets</h3>
+    <table>
+      <tr><td><a href="https://github.com/HistoTechOpen/synaptic-labelling-data">synaptic-labelling-data</a></td><td>Synaptic labelling dataset + processing video</td></tr>
+      <tr><td><a href="https://github.com/HistoTechOpen/drg-reconstruction-data">drg-reconstruction-data</a></td><td>DRG full reconstruction dataset + processing video</td></tr>
+    </table>
+
+    <h3>Data Processing</h3>
+    <table>
+      <tr><td><a href="https://github.com/HistoTechOpen/stereomate">stereomate</a></td><td>StereoMate</td></tr>
+      <tr><td><a href="https://github.com/HistoTechOpen/brainregister">brainregister</a></td><td>BrainRegister</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="wrap">
+  <h2>Roadmap</h2>
+  <p>What's next for the projects and repos above — next dataset, next
+  procedure pack, next tool migration.</p>
+</section>
+
+<!-- FOUNDER -->
+<section class="wrap">
+  <div class="founder">
+    <img src="images/steven-west.jpg" alt="Dr Steven West">
+    <div>
+      <h2>Led by Dr Steven West</h2>
+      <p>Senior Histology Research Scientist &amp; Head of Histology,
+      Sainsbury Wellcome Centre, UCL · Secretary-General, IFSHI · Founder,
+      RMS Histology FIG.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="mailto:you@example.com">Contact</a>
+</footer>
+
+</body>
+</html>
