@@ -20,11 +20,23 @@
   td,th{padding:8px 12px;border-bottom:1px solid var(--border);text-align:left}
 
   /* HERO */
-  .hero{background:var(--surface);color:var(--text);text-align:center;padding:60px 20px 0}
-  .hero h1{color:var(--text);margin:0 0 .3em;font-size:2.4em}
-  .hero .caption{max-width:600px;margin:0 auto 40px;font-size:1.15em;color:var(--muted)}
-  .hero-img{width:100%;height:auto;display:block}
-
+.hero{position:relative;overflow:hidden}
+.hero-img{width:100%;height:auto;display:block}
+.hero-text{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:20px;
+}
+.hero-text h1{
+  color:rgba(255,255,255,.92);
+  text-shadow:0 2px 12px rgba(0,0,0,.6);
+  margin:0 0 .3em;font-size:2.4em;
+}
+.hero-text .caption{
+  color:rgba(255,255,255,.85);
+  text-shadow:0 1px 8px rgba(0,0,0,.6);
+  max-width:600px;margin:0 auto;font-size:1.15em;
+}
   /* PILLARS */
   .pillars{background:var(--surface-alt)}
   .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
@@ -57,9 +69,11 @@
 
 <!-- HERO -->
 <header class="hero">
-  <h1>HistoTechOpen</h1>
-  <p class="caption">Understanding, modelling, and optimising the histochemical workflow — in the open, for full reproducibility.</p>
   <img src="images/hero-section.jpg" alt="HistoTechOpen hero image" class="hero-img">
+  <div class="hero-text">
+    <h1>HistoTechOpen</h1>
+    <p class="caption">Understanding, modelling, and optimising the histochemical workflow — in the open, for full reproducibility.</p>
+  </div>
 </header>
 
 <!-- CORE PROPOSITION -->
